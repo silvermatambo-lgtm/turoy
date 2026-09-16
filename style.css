@@ -1,0 +1,82 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* HEADER */
+.logo img { height: 60px; width: auto; }
+header { background: #002147; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 100; }
+nav { margin-top: 10px; }
+nav a { color: white; text-decoration: none; margin: 0 12px; font-weight: bold; font-size:14px; }
+nav a:hover { color: #FFA500; }
+
+/* HERO */
+.hero { background: #002147; color: white; text-align: center; padding: 100px 20px; }
+.hero h2 { font-size: 36px; margin-bottom: 15px; }
+.hero p { font-size: 18px; margin-bottom: 30px; }
+.btn { display: inline-block; padding: 12px 25px; margin: 5px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.btn-primary { background: #FFA500; color: white; }
+.btn-orange { background: #FFA500; color: white; }
+.btn-orange span { margin-right: 8px; }
+.btn:hover { opacity: 0.9; }
+
+/* SECTIONS */
+section { padding: 60px 20px; }
+section h2 { text-align: center; font-size: 32px; margin-bottom: 10px; color: #002147; }
+section p { text-align: center; margin-bottom: 40px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.card { background: #f4f4f4; padding: 25px; border-radius: 8px; text-align: center; border-left: 4px solid #FFA500; }
+.card h3, .card h4 { color: #002147; margin-bottom: 10px; }
+
+/* FEATURED BAR */
+.featured-bar { background: #f4f4f4; padding: 40px 20px; margin-top: -30px; position: relative; z-index: 10; }
+.featured-bar .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.feature-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 4px solid #FFA500; transition: transform 0.3s; }
+.feature-card:hover { transform: translateY(-8px); }
+.feature-card h3 { color: #002147; margin-bottom: 15px; font-size: 18px; }
+.slider { height: 40px; overflow: hidden; position: relative; }
+.slide-item { height: 40px; display: flex; align-items: center; font-weight: bold; color: #333; animation: slideUp 8s infinite; }
+@keyframes slideUp { 0% { transform: translateY(0); } 25% { transform: translateY(-40px); } 50% { transform: translateY(-80px); } 75% { transform: translateY(-120px); } 100% { transform: translateY(0); } }
+#new-slider .slide-item { animation-delay: 1s; }
+.newsletter p { font-size: 14px; text-align: left; margin-bottom: 15px; }
+.newsletter-form { display: flex; gap: 8px; }
+.newsletter-form input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+.newsletter-form button { padding: 10px 15px; background: #FFA500; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+.feature-card.trending { border-top-color: #FF4500; } .feature-card.new { border-top-color: #28a745; } .feature-card.newsletter { border-top-color: #002147; }
+
+/* PRODUCTS */
+.category-title { color: #002147; font-size: 24px; margin: 50px 0 20px; border-bottom: 3px solid #FFA500; padding-bottom: 10px; text-align: left; }
+.products .card h4 { color: #002147; margin-bottom: 8px; font-size: 16px; }
+.products .card p { font-size: 13px; text-align: left; margin: 0; }
+.products .card { text-align: left; }
+.card-link { text-decoration: none; color: inherit; display: block; }
+.card-link .card { transition: 0.3s; cursor: pointer; }
+.card-link:hover .card { transform: translateY(-5px); border-left: 4px solid #25D366; box-shadow: 0 6px 15px rgba(37,211,102,0.2); }
+.card-link .card h4:after { content: " → WhatsApp"; font-size: 11px; color: #25D366; font-weight: normal; }
+
+/* PPE */
+.ppe { background: #fff; }
+.brand-grid, .category-grid { margin-top: 30px; }
+.brand-card { background: white; border: 2px solid #f0f0f0; border-radius: 8px; padding: 20px; text-align: center; transition: 0.3s; }
+.brand-card:hover { border-color: #FFA500; transform: translateY(-5px); }
+.brand-card img { height: 50px; margin-bottom: 10px; object-fit: contain; }
+.brand-card h4 { color: #002147; margin-bottom: 8px; }
+.brand-card a { color: #FFA500; font-weight: bold; text-decoration: none; font-size: 14px; }
+.cat-card { background: #f9f9f9; border-left: 4px solid #FFA500; border-radius: 8px; padding: 20px; text-align: left; cursor: pointer; transition: 0.3s; text-decoration: none; color: inherit; display: block; }
+.cat-card:hover { background: #FFF8E1; }
+.cat-card span { font-size: 28px; display: block; margin-bottom: 8px; }
+.cat-card h4 { color: #002147; margin-bottom: 5px; }
+.cat-card p { text-align: left; margin: 0; font-size: 14px; }
+
+/* SERVICES */
+.services { background: #f9f9f9; }
+.services ul { list-style: none; text-align: left; margin-top: 10px; }
+.services li { padding: 5px 0; }
+.services li:before { content: "✓ "; color: #FFA500; font-weight: bold; }
+
+/* HIRE */
+.hire { background: #f9f9f9; }
+.hire-grid { margin-top: 30px; }
+/* WebDevPro review build enhancements */
+html{scroll-behavior:smooth} body{background:#fff}.logo img{height:72px;max-width:min(520px,100%);object-fit:contain;background:#fff;padding:6px;border-radius:8px}.hero{background:linear-gradient(135deg,#002147,#063a6d)}
+.payment-section{padding:60px 20px;background:#fff8e8}.payment-box{max-width:900px;margin:auto;background:#fff;border:1px solid #f0d8a5;border-radius:16px;padding:28px;box-shadow:0 10px 30px #00000010;text-align:center}.payment-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:20px}.pay-option{border:1px solid #ddd;border-radius:10px;padding:16px;font-weight:700;color:#002147}.pay-option small{display:block;font-weight:400;color:#666;margin-top:5px}.form-choice{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:25px auto}.form-choice a{padding:22px;border-radius:12px;background:#002147;color:#fff;font-weight:800;text-decoration:none}.form-choice a:last-child{background:#f2aa36;color:#002147}.livechat-placeholder{position:fixed;right:18px;bottom:18px;background:#f2aa36;color:#002147;border:0;border-radius:999px;padding:14px 18px;font-weight:800;box-shadow:0 8px 24px #0003;z-index:150}
+@media(max-width:700px){header{padding:10px 0}.logo{text-align:center}.logo img{height:auto;width:100%;max-height:85px}nav{display:flex;overflow-x:auto;gap:5px;padding-bottom:6px}nav a{white-space:nowrap;margin:0 7px}.hero{padding:70px 16px}.hero h2{font-size:30px}.form-choice{grid-template-columns:1fr}.livechat-placeholder{bottom:12px;right:12px}.hire-card img{width:100%;height:auto}.footer-content{grid-template-columns:1fr!important}}
