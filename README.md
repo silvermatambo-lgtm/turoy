@@ -1,11 +1,26 @@
 # Turoy Mining & Industrial Supplies
 
-Vercel-ready static review build based on the supplied HTML/CSS and logo.
+Premium Vercel-ready e-commerce review build for Turoy Industrial Supplies.
+
+## Included
+- Modern responsive homepage based on the supplied Turoy structure
+- Animated hero slider and typewriter heading
+- African mining and industrial imagery
+- Product catalogue with demo pricing and descriptions
+- Product search, persistent shopping cart and full demo checkout flow
+- WhatsApp quote paths and quick contact actions
+- Equipment hire and engineering service sections
+- Supplier Portal
+- Separate Quote and Supplier Application paths
+- PWA manifest, install buttons, mobile bottom menu and service worker
+- Existing Turoy logo retained for header, footer and app identity
 
 ## Pending activation
-- Replace `YOUR_QUOTE_FORM_LINK` with the Quote Google Form ID.
-- Replace `YOUR_SUPPLIER_FORM_LINK` with the Supplier Application Google Form ID.
-- Replace the live-chat placeholder with the tawk.to embed script/property ID.
-- Connect the chosen payment gateway using merchant credentials.
+- Live payment gateway/API merchant credentials
+- Final product catalogue, stock and live prices
+- Quote Google Form URL
+- Supplier Application Google Form URL
+- tawk.to property/widget ID
 
-Deploy the repository root directly to Vercel.
+## Deployment
+Deploy the repository root directly to Vercel as a static project. `vercel.json` is already included.
